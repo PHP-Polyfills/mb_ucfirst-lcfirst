@@ -30,6 +30,8 @@ class MbUcfirstLcfirstTest extends TestCase {
             ['ǉ', 'ǈ'],
             ["\u{01CA}", "\u{01CB}"],
             ["\u{01CA}\u{01CA}", "\u{01CB}\u{01CA}"],
+            ["łámał", "Łámał"],
+            ["ßst", "Ssst"],
         ];
     }
 
@@ -47,6 +49,8 @@ class MbUcfirstLcfirstTest extends TestCase {
             ["\u{01CB}", "\u{01CC}"],
             ["\u{01CA}", "\u{01CC}"],
             ["\u{01CA}\u{01CA}", "\u{01CC}\u{01CA}"],
+            ["\u{212A}\u{01CA}", "\u{006b}\u{01CA}"],
+            ["ß", "ß"],
         ];
     }
 }
